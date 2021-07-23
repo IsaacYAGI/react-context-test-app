@@ -1,8 +1,12 @@
-import { React } from 'react';
+import { React,useContext } from 'react';
 import { NavLink } from "react-router-dom";
+
+import { UserContext } from '@contexts/UserContext/UserContext';
 
 
 export default function Navbar(){
+    const { Name } = useContext(UserContext);
+    console.log(Name)
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
