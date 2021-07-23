@@ -6,7 +6,7 @@ import Home from '@components/home/home'
 import About from '@components/about/about'
 import Contacts from '@components/contacts/contacts'
 
- const Navigation = () => {
+ const Routes = () => {
     return (
            <Switch>
                <Route exact path='/home' component={Home} />
@@ -21,4 +21,4 @@ import Contacts from '@components/contacts/contacts'
     )
 } 
 
-export default Navigation
+export default Routes
