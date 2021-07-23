@@ -13,13 +13,13 @@ export default function Navbar(){
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink to="/home" className="nav-link" activeClassName='active' aria-current="page" href="#">Home</NavLink>
+                <NavLink to="/home" className="nav-link" activeClassName='active' aria-current="page">Home</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/about" className="nav-link" href="#">About</NavLink>
+                <NavLink to="/about" className="nav-link">About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contacts" className="nav-link" href="#">Contacts</NavLink>
+                <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
               </li>
               {/* <li className="nav-item">
                 <NavLink to="/" className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</NavLink>

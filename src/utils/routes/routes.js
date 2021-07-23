@@ -3,11 +3,15 @@ import {
     Route
  } from 'react-router-dom'
 import Home from '@components/home/home'
+import About from '@components/about/about'
+import Contacts from '@components/contacts/contacts'
 
  const Navigation = () => {
     return (
            <Switch>
                <Route exact path='/home' component={Home} />
+               <Route exact path='/about' component={About} />
+               <Route exact path='/contacts' component={Contacts} />
                {/* <Route path='/login' component={Login} />
                <Route path='/register' component={Register} />
                <PrivateRoute path='/admin' component={Admin} />
