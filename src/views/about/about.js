@@ -1,5 +1,6 @@
 import { React, useContext } from 'react';
 import { UserContext } from '@contexts/UserContext/UserContext';
+import NameInput from '@components/about/components/name-input/name-input';
 
 export default function About(){
     const { Name, setName } = useContext(UserContext)
@@ -7,7 +8,7 @@ export default function About(){
     return (
         <>
             <div>Current name: { Name }</div>
-            <input placeholder="Insert your name here..." onChange={(event)=> setName(event.target.value)}></input>
+            <NameInput placeholder="Insert your name here..." onChangeFunction={setName}></NameInput>
         </>
     );
 }
